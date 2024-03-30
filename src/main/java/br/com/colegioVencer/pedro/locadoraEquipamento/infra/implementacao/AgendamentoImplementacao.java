@@ -12,7 +12,6 @@ import br.com.colegioVencer.pedro.locadoraEquipamento.infra.AtendenteRepository;
 import br.com.colegioVencer.pedro.locadoraEquipamento.infra.ItemRepository;
 import br.com.colegioVencer.pedro.locadoraEquipamento.infra.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -2,12 +2,12 @@ package br.com.colegioVencer.pedro.locadoraEquipamento.dominio;
 
 
 import br.com.colegioVencer.pedro.locadoraEquipamento.dto.response.ProfessorResponse;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "tb_professor")

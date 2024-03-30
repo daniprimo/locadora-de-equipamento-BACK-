@@ -1,12 +1,12 @@
 package br.com.colegioVencer.pedro.locadoraEquipamento.dominio;
 
 import br.com.colegioVencer.pedro.locadoraEquipamento.dto.response.AtendenteResponse;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "tb_atendente")
@@ -23,7 +23,7 @@ public class Atendente{
     private String login;
     private String senha;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "atendente")
+    @OneToMany(mappedBy = "atendente")
     private List<Agendamento> agendamentos;
 
 

@@ -2,12 +2,12 @@ package br.com.colegioVencer.pedro.locadoraEquipamento.dominio;
 
 import br.com.colegioVencer.pedro.locadoraEquipamento.dto.response.AgendamentoResponse;
 import br.com.colegioVencer.pedro.locadoraEquipamento.dto.response.AgendamentoRetiradoResponse;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "tb_agendamento")
@@ -21,10 +21,10 @@ public class Agendamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Atendente atendente;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Professor professor;
 
     @ManyToMany
