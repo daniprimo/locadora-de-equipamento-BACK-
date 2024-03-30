@@ -3,9 +3,9 @@ spring:
   application:
     name: mslocadora
   datasource:
-    url: jdbc:postgresql://localhost:5432/locadora
-    username: postgres
-    password: 1234
+    url: jdbc:postgresql://dpg-co45bun79t8c738uvgqg-a.oregon-postgres.render.com:5432/locadora_ncgd
+    username: locadora_ncgd_user
+    password: ivXnkbz179AsDEmgWNz7jE6exKJ73mMu
   jpa:
     hibernate:
       ddl-auto: update
@@ -13,3 +13,4 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
